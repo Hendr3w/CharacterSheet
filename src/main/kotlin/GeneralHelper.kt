@@ -270,6 +270,10 @@ class GeneralHelper {
         }
     }
 
+    fun calcModi(status : Int) : Int{
+       return (status)/ 2 - 5
+    }
+
     fun calcHP(tav: Tav){
         var constMod = calcMod(tav.consituition);
         tav.health += constMod
